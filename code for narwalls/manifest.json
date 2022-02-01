@@ -1,0 +1,21 @@
+{
+"manifest_version": 2,
+"name": "For Narwalls",
+"version": "0.1",
+"web_accessible_resources": [
+  "Narwalls/*.jpg"
+],
+"content_scripts": [{
+  "matches": [
+    "<all_urls>"
+  ],
+  "js": ["narwall.js"]
+}],
+"background":   {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "cutepfp.png"
+  }
+
+}
